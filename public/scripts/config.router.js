@@ -44,6 +44,13 @@ angular.module('app')
               // ,
               // resolve: load([ 'scripts/controllers/chart.js','scripts/controllers/vectormap.js'])
             })
+            .state('app.add_advertiser', {
+              url: '/advertiser',
+              templateUrl: 'views/pages/add_advertiser.html',
+              data : { title: 'Dashboard', folded: true }
+              // ,
+              // resolve: load([ 'scripts/controllers/chart.js','scripts/controllers/vectormap.js'])
+            })            
             .state('app.analysis', {
               url: '/analysis',
               templateUrl: 'views/pages/dashboard.analysis.html',
